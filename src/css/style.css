@@ -4,12 +4,10 @@
     font-style: normal;
 }
 
-* {
+*{
     font-family: "Chonburi";
     font-size: 0.85vw;
 }
-
-
 
 .range-slider {
     height: 5px;
