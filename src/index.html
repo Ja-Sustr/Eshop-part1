@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="cs" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ULTRAPIXEL</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="./js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Gabriela&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+
+    <nav class="navbar bg-white border-bottom border-success border-5 container">
+        <div class="container">
+            <a class="navbar-brand mx-auto" href="#">
+                <img src="images/Logo.svg" alt="Bootstrap" width="100" height="100">
+            </a>
+        </div>
+    </nav>
+
+
+    <div class="container bg-white">
+        <h4 class="text-center pt-3 text-success">NEJLEPŠÍ FOTO TECHNIKA NA TRHU</h4>
+
+
+        <!--rozdeleni na sloupce-->
+        <div class="text-start pt-5">
+            <div class="row">
+                <div class="col-3">
+
+                    <!--filtry-->
+                    <div class="m-3">
+                        <div class=" text-center mt-1 mb-2 fs-5">Cena a dostupnost</div>
+
+                        <!--pod filtry-->
+                        <div>
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                    class="form-check-input">
+                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                    <span>Skladem</span>
+                                    <span class="text-primary">17x</span>
+                                </label>
+                            </div>
+
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                    class="form-check-input">
+                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                    <span>Akce</span>
+                                    <span class="text-primary">1x</span>
+                                </label>
+                            </div>
+
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                    class="form-check-input">
+                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                    <span>Výprodej</span>
+                                    <span class="text-primary">2x</span>
+                                </label>
+                            </div>
+
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                    class="form-check-input">
+                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                    <span>Novinka</span>
+                                    <span class="text-primary">5x</span>
+                                </label>
+                            </div>
+
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                    class="form-check-input">
+                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                    <span>Jen nové</span>
+                                    <span class="text-primary">28x</span>
+                                </label>
+                            </div>
+
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                    class="form-check-input">
+                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                    <span>Doporučené</span>
+                                    <span class="text-primary">6x</span>
+                                </label>
+                            </div>
+
+
+
+                            <div class="range mt-4">
+                                <div class="range-slider">
+                                  <span class="range-selected"></span>
+                                </div>
+                                <div class="range-input">
+                                  <input type="range" class="min" min="0" max="200000" value="60000" step="100">
+                                  <input type="range" class="max" min="0" max="200000" value="140000" step="100">
+                                </div>
+                                <div class="range-price mt-3">      
+                                  <input type="number" name="min" value="60000" class="border-primary">      
+                                  <input type="number" name="max" value="140000" class="border-primary">      
+                                </div>
+                              </div> 
+
+
+                            
+
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+                <!--tlacitka filtry-->
+                <div class="col-9">
+                    <div class="row row-col-4 d-flex justify-content-around text-center">
+                        <div class="border border-2 border-primary col-2 tlacitko bg-primary-subtle p-2">Doporučené
+                        </div>
+                        <div class="border border-2 border-primary col-2 tlacitko  p-2">Cena sestupně</div>
+                        <div class="border border-2 border-primary col-2 tlacitka  p-2">Cena vzestupně</div>
+                        <div class="border border-2 border-primary col-2 tlacitko  p-2">Abecedně</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
