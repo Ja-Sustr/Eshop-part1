@@ -30,6 +30,13 @@ $info: #E9F6FF;
 
 }
 
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 80%
+);
 
 
 @import "bootstrap";
