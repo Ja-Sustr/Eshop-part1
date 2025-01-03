@@ -91,3 +91,14 @@
   .range-price input:first-of-type {
     margin-right: 15px;
   }
+
+  @media (max-width: 599px) {
+    .vanish {
+      display: none;
+    }
+  }
+
+  .container {
+    overflow-x: hidden;
+}
+
