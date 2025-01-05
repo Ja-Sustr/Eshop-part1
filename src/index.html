@@ -34,74 +34,66 @@
 
         <h4 class="text-center pt-3 text-success">NEJLEPŠÍ FOTO TECHNIKA NA TRHU</h4>
 
+        <div class="dropdown d-md-none">
 
-        <!--rozdeleni na sloupce-->
-        <div class="text-start pt-5">
-            <div class="row">
-                <div class="col-12 col-md-3">
-
-                    <!--filtry-->
+            <button class="btn btn-success dropdown-toggle w-100" type="button" id="filtersDropdown"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Filtry
+            </button>
+            <ul class="dropdown-menu w-100" aria-labelledby="filtersDropdown">
+                <!-- Filtry 1 -->
+                <li>
                     <div class="m-3">
-                        <div class=" text-center mt-1 mb-2 fs-5">Cena a dostupnost</div>
-
-                        <!--pod filtry-->
+                        <div class="text-center mt-1 mb-2 fs-3">Cena a dostupnost</div>
                         <div>
                             <div class="form-check d-flex justify-content-between w-100 my-2">
                                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
                                     class="form-check-input">
                                 <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>Skladem</span>
-                                    <span class="text-primary">17x</span>
+                                    <span class="fs-4">Skladem</span>
+                                    <span class="text-primary fs-4">17x</span>
                                 </label>
                             </div>
-
                             <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                <input type="checkbox" id="vehicle2" name="vehicle2" value="Akce"
                                     class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>Akce</span>
-                                    <span class="text-primary">1x</span>
+                                <label for="vehicle2" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">Akce</span>
+                                    <span class="text-primary fs-4">1x</span>
                                 </label>
                             </div>
-
                             <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                <input type="checkbox" id="vehicle3" name="vehicle3" value="Vyprodej"
                                     class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>Výprodej</span>
-                                    <span class="text-primary">2x</span>
+                                <label for="vehicle3" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">Výprodej</span>
+                                    <span class="text-primary fs-4">2x</span>
                                 </label>
                             </div>
-
                             <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                <input type="checkbox" id="vehicle4" name="vehicle4" value="Novinka"
                                     class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>Novinka</span>
-                                    <span class="text-primary">5x</span>
+                                <label for="vehicle4" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">Novinka</span>
+                                    <span class="text-primary fs-4">5x</span>
                                 </label>
                             </div>
-
                             <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                <input type="checkbox" id="vehicle5" name="vehicle5" value="Jen nove"
                                     class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>Jen nové</span>
-                                    <span class="text-primary">28x</span>
+                                <label for="vehicle5" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">Jen nové</span>
+                                    <span class="text-primary fs-4">28x</span>
                                 </label>
                             </div>
-
                             <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                <input type="checkbox" id="vehicle6" name="vehicle6" value="Doporucene"
                                     class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>Doporučené</span>
-                                    <span class="text-primary">6x</span>
+                                <label for="vehicle6" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">Doporučené</span>
+                                    <span class="text-primary fs-4">6x</span>
                                 </label>
                             </div>
-
-
-
                             <div class="range mt-4">
                                 <div class="range-slider">
                                     <span class="range-selected"></span>
@@ -115,16 +107,201 @@
                                     <input type="number" name="max" value="140000" class="border-primary">
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </li>
 
+                <!-- Filtry 2 -->
+                <li>
+                    <div class="m-3 mt-5">
+                        <div class="text-center mt-1 mb-2 fs-3">Formát snímače</div>
+                        <div>
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle7" name="vehicle7" value="43"
+                                    class="form-check-input">
+                                <label for="vehicle7" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">4/3</span>
+                                    <span class="text-primary fs-4">5x</span>
+                                </label>
+                            </div>
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle8" name="vehicle8" value="APSC"
+                                    class="form-check-input">
+                                <label for="vehicle8" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">APS-C</span>
+                                    <span class="text-primary fs-4">7x</span>
+                                </label>
+                            </div>
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle9" name="vehicle9" value="44x33mm"
+                                    class="form-check-input">
+                                <label for="vehicle9" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">44x33 mm</span>
+                                    <span class="text-primary fs-4">0x</span>
+                                </label>
+                            </div>
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle10" name="vehicle10" value="FullFrame"
+                                    class="form-check-input">
+                                <label for="vehicle10" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">Full Frame</span>
+                                    <span class="text-primary fs-4">25x</span>
+                                </label>
+                            </div>
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle11" name="vehicle11" value="35mm"
+                                    class="form-check-input">
+                                <label for="vehicle11" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">35 mm</span>
+                                    <span class="text-primary fs-4">2x</span>
+                                </label>
+                            </div>
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle12" name="vehicle12" value="Medium"
+                                    class="form-check-input">
+                                <label for="vehicle12" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">Medium</span>
+                                    <span class="text-primary fs-4">6x</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Filtry 3 -->
+                <li>
+                    <div class="m-3 mt-5">
+                        <div class="text-center mt-1 mb-2 fs-3">Typ bajonetu</div>
+                        <div>
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle13" name="vehicle13" value="CanonRF"
+                                    class="form-check-input">
+                                <label for="vehicle13" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">Canon RF</span>
+                                    <span class="text-primary fs-4">6x</span>
+                                </label>
+                            </div>
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle14" name="vehicle14" value="SonyFE"
+                                    class="form-check-input">
+                                <label for="vehicle14" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">Sony FE</span>
+                                    <span class="text-primary fs-4">9x</span>
+                                </label>
+                            </div>
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle15" name="vehicle15" value="FujifilmX"
+                                    class="form-check-input">
+                                <label for="vehicle15" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">Fujifilm X</span>
+                                    <span class="text-primary fs-4">4x</span>
+                                </label>
+                            </div>
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle16" name="vehicle16" value="HasselbladX"
+                                    class="form-check-input">
+                                <label for="vehicle16" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">Hasselbald X</span>
+                                    <span class="text-primary fs-4">4x</span>
+                                </label>
+                            </div>
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle17" name="vehicle17" value="Lmount"
+                                    class="form-check-input">
+                                <label for="vehicle17" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">L mount</span>
+                                    <span class="text-primary fs-4">5x</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                 <!-- Filtry 4 -->
+                 <li>
+                    <div class="m-3 mt-5">
+                        <div class=" text-center mt-1 mb-2 fs-3">Vestavěný blesk</div>
+                        <div>
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                    class="form-check-input">
+                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">Ano</span>
+                                    <span class="text-primary fs-4">29x</span>
+                                </label>
+                            </div>
+
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                    class="form-check-input">
+                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">Ne</span>
+                                    <span class="text-primary fs-4">9x</span>
+                                </label>
+                            </div>
 
                         </div>
                     </div>
+                </li>
 
-
-
-                    <!--filtry2-->
+                 <!-- Filtry 5 -->
+                 <li>
                     <div class="m-3 mt-5">
-                        <div class=" text-center mt-1 mb-2 fs-5">Formát snímače</div>
+                        <div class=" text-center mt-1 mb-2 fs-3">Rozlišení videa</div>
+                        <div>
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                    class="form-check-input">
+                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">Full HD</span>
+                                    <span class="text-primary fs-4">6x</span>
+                                </label>
+                            </div>
+
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                    class="form-check-input">
+                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">4K UHD</span>
+                                    <span class="text-primary fs-4">7x</span>
+                                </label>
+                            </div>
+
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                    class="form-check-input">
+                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">DCI - 4K</span>
+                                    <span class="text-primary fs-4">2x</span>
+                                </label>
+                            </div>
+
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                    class="form-check-input">
+                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">6K</span>
+                                    <span class="text-primary fs-4">4x</span>
+                                </label>
+                            </div>
+
+                            <div class="form-check d-flex justify-content-between w-100 my-2">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                    class="form-check-input">
+                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                    <span class="fs-4">5K</span>
+                                    <span class="text-primary fs-4">2x</span>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Filtry 6 -->
+                <li>
+                    <div class="m-3 mt-5">
+                        <div class=" text-center mt-1 mb-2 fs-3">FPS Videa</div>
 
                         <!--pod filtry-->
                         <div>
@@ -132,8 +309,8 @@
                                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
                                     class="form-check-input">
                                 <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>4/3</span>
-                                    <span class="text-primary">5x</span>
+                                    <span class="fs-4">240</span>
+                                    <span class="text-primary fs-4">5x</span>
                                 </label>
                             </div>
 
@@ -141,8 +318,8 @@
                                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
                                     class="form-check-input">
                                 <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>APS-C</span>
-                                    <span class="text-primary">7x</span>
+                                    <span class="fs-4">120</span>
+                                    <span class="text-primary fs-4">6x</span>
                                 </label>
                             </div>
 
@@ -150,8 +327,8 @@
                                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
                                     class="form-check-input">
                                 <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>44x33 mm</span>
-                                    <span class="text-primary">0x</span>
+                                    <span class="fs-4">60</span>
+                                    <span class="text-primary fs-4">4x</span>
                                 </label>
                             </div>
 
@@ -159,8 +336,8 @@
                                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
                                     class="form-check-input">
                                 <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>Full Frame</span>
-                                    <span class="text-primary">25x</span>
+                                    <span class="fs-4">30</span>
+                                    <span class="text-primary fs-4">5x</span>
                                 </label>
                             </div>
 
@@ -168,28 +345,19 @@
                                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
                                     class="form-check-input">
                                 <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>35 mm</span>
-                                    <span class="text-primary">2x</span>
-                                </label>
-                            </div>
-
-                            <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
-                                    class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>Medium</span>
-                                    <span class="text-primary">6x</span>
+                                    <span class="fs-4">24</span>
+                                    <span class="text-primary fs-4">2x</span>
                                 </label>
                             </div>
 
                         </div>
                     </div>
+                </li>
 
-
-
-                    <!--filtry3-->
+                <!-- Filtry 7 -->
+                <li>
                     <div class="m-3 mt-5">
-                        <div class=" text-center mt-1 mb-2 fs-5">Typ bajonetu</div>
+                        <div class=" text-center mt-1 mb-2 fs-3">FPS Snímků</div>
 
                         <!--pod filtry-->
                         <div>
@@ -197,8 +365,8 @@
                                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
                                     class="form-check-input">
                                 <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>Canon RF</span>
-                                    <span class="text-primary">6x</span>
+                                    <span class="fs-4">12</span>
+                                    <span class="text-primary fs-4">15x</span>
                                 </label>
                             </div>
 
@@ -206,8 +374,8 @@
                                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
                                     class="form-check-input">
                                 <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>Sony FE</span>
-                                    <span class="text-primary">9x</span>
+                                    <span class="fs-4">10</span>
+                                    <span class="text-primary fs-4">12x</span>
                                 </label>
                             </div>
 
@@ -215,8 +383,8 @@
                                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
                                     class="form-check-input">
                                 <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>Fujifilm X</span>
-                                    <span class="text-primary">4x</span>
+                                    <span class="fs-4">8</span>
+                                    <span class="text-primary fs-4">4x</span>
                                 </label>
                             </div>
 
@@ -224,744 +392,952 @@
                                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
                                     class="form-check-input">
                                 <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>Hasselbald X</span>
-                                    <span class="text-primary">4x</span>
-                                </label>
-                            </div>
-
-                            <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
-                                    class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>L mount</span>
-                                    <span class="text-primary">5x</span>
+                                    <span class="fs-4">6</span>
+                                    <span class="text-primary fs-4">4x</span>
                                 </label>
                             </div>
 
                         </div>
                     </div>
+                </li>
+            </ul>
 
 
-                    <!--filtry4-->
-                    <div class="m-3 mt-5">
-                        <div class=" text-center mt-1 mb-2 fs-5">Vestavěný blesk</div>
 
-                        <!--pod filtry-->
-                        <div>
-                            <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
-                                    class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>Ano</span>
-                                    <span class="text-primary">29x</span>
-                                </label>
+            
+        </div>
+
+
+
+        <!--rozdeleni na sloupce-->
+        <div class="text-start pt-5">
+            <div class="row">
+                <div class="col-12 col-md-3">
+
+                    <!---->
+                    <div class="skryt">
+                        <!--filtry-->
+                        <div class="m-3">
+                            <div class=" text-center mt-1 mb-2 fs-5">Cena a dostupnost</div>
+
+                            <!--pod filtry-->
+                            <div>
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>Skladem</span>
+                                        <span class="text-primary">17x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>Akce</span>
+                                        <span class="text-primary">1x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>Výprodej</span>
+                                        <span class="text-primary">2x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>Novinka</span>
+                                        <span class="text-primary">5x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>Jen nové</span>
+                                        <span class="text-primary">28x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>Doporučené</span>
+                                        <span class="text-primary">6x</span>
+                                    </label>
+                                </div>
+
+
+
+                                <div class="range mt-4">
+                                    <div class="range-slider">
+                                        <span class="range-selected"></span>
+                                    </div>
+                                    <div class="range-input">
+                                        <input type="range" class="min" min="0" max="200000" value="60000" step="100">
+                                        <input type="range" class="max" min="0" max="200000" value="140000" step="100">
+                                    </div>
+                                    <div class="range-price mt-3">
+                                        <input type="number" name="min" value="60000" class="border-primary">
+                                        <input type="number" name="max" value="140000" class="border-primary">
+                                    </div>
+                                </div>
+
+
                             </div>
+                        </div>
 
-                            <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
-                                    class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>Ne</span>
-                                    <span class="text-primary">9x</span>
-                                </label>
+
+
+                        <!--filtry2-->
+                        <div class="m-3 mt-5">
+                            <div class=" text-center mt-1 mb-2 fs-5">Formát snímače</div>
+
+                            <!--pod filtry-->
+                            <div>
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>4/3</span>
+                                        <span class="text-primary">5x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>APS-C</span>
+                                        <span class="text-primary">7x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>44x33 mm</span>
+                                        <span class="text-primary">0x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>Full Frame</span>
+                                        <span class="text-primary">25x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>35 mm</span>
+                                        <span class="text-primary">2x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>Medium</span>
+                                        <span class="text-primary">6x</span>
+                                    </label>
+                                </div>
+
                             </div>
+                        </div>
+
+
+
+                        <!--filtry3-->
+                        <div class="m-3 mt-5">
+                            <div class=" text-center mt-1 mb-2 fs-5">Typ bajonetu</div>
+
+                            <!--pod filtry-->
+                            <div>
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>Canon RF</span>
+                                        <span class="text-primary">6x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>Sony FE</span>
+                                        <span class="text-primary">9x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>Fujifilm X</span>
+                                        <span class="text-primary">4x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>Hasselbald X</span>
+                                        <span class="text-primary">4x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>L mount</span>
+                                        <span class="text-primary">5x</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!--filtry4-->
+                        <div class="m-3 mt-5">
+                            <div class=" text-center mt-1 mb-2 fs-5">Vestavěný blesk</div>
+
+                            <!--pod filtry-->
+                            <div>
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>Ano</span>
+                                        <span class="text-primary">29x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>Ne</span>
+                                        <span class="text-primary">9x</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!--filtry5-->
+                        <div class="m-3 mt-5">
+                            <div class=" text-center mt-1 mb-2 fs-5">Rozlišení videa</div>
+
+                            <!--pod filtry-->
+                            <div>
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>Full HD</span>
+                                        <span class="text-primary">6x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>4K UHD</span>
+                                        <span class="text-primary">7x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>DCI - 4K</span>
+                                        <span class="text-primary">2x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>6K</span>
+                                        <span class="text-primary">4x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>5K</span>
+                                        <span class="text-primary">2x</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!--filtry6-->
+                        <div class="m-3 mt-5">
+                            <div class=" text-center mt-1 mb-2 fs-5">FPS Videa</div>
+
+                            <!--pod filtry-->
+                            <div>
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>240</span>
+                                        <span class="text-primary">5x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>120</span>
+                                        <span class="text-primary">6x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>60</span>
+                                        <span class="text-primary">4x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>30</span>
+                                        <span class="text-primary">5x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>24</span>
+                                        <span class="text-primary">2x</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!--filtry7-->
+                        <div class="m-3 mt-5">
+                            <div class=" text-center mt-1 mb-2 fs-5">FPS Snímků</div>
+
+                            <!--pod filtry-->
+                            <div>
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>12</span>
+                                        <span class="text-primary">15x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>10</span>
+                                        <span class="text-primary">12x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>8</span>
+                                        <span class="text-primary">4x</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex justify-content-between w-100 my-2">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
+                                        class="form-check-input">
+                                    <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
+                                        <span>6</span>
+                                        <span class="text-primary">4x</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
 
                         </div>
                     </div>
 
 
-                    <!--filtry5-->
-                    <div class="m-3 mt-5">
-                        <div class=" text-center mt-1 mb-2 fs-5">Rozlišení videa</div>
+                    <!--tlacitka filtry-->
+                    <div class="col-12 col-md-9">
+                        <div class="row row-col-4 d-flex justify-content-around text-center">
+                            <div class="border border-2 border-primary col-2 tlacitko bg-primary-subtle p-2">Doporučené
+                            </div>
+                            <div class="border border-2 border-primary col-2 tlacitko  p-2">Cena sestupně</div>
+                            <div class="border border-2 border-primary col-2 tlacitka  p-2">Cena vzestupně</div>
+                            <div class="border border-2 border-primary col-2 tlacitko  p-2">Abecedně</div>
+                        </div>
 
-                        <!--pod filtry-->
-                        <div>
-                            <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
-                                    class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>Full HD</span>
-                                    <span class="text-primary">6x</span>
-                                </label>
+
+                        <!--CANON-->
+                        <h1 class="text-center mt-5 mb-4">Canon</h1>
+
+                        <!--produkty-->
+                        <div class="row justify-content-around text-center row-cols-1 row-cols-md-2 row-cols-lg-3">
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <a href="CanonR8.html"><img src="images/canon1.png" class="card-img-top mt-4 p-3" alt="..."></a>
+                                    <div class="card-body">
+                                        <a href="CanonR8.html" class="card-text text-decoration-none text-black">
+                                            Canon eos R8 Mark II <br> Tělo <br><br>
+                                            56 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
-                                    class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>4K UHD</span>
-                                    <span class="text-primary">7x</span>
-                                </label>
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/canon2.png" class="card-img-top mt-4 p-3" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon eos R8 <br> Tělo <br><br>
+                                            34 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
-                                    class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>DCI - 4K</span>
-                                    <span class="text-primary">2x</span>
-                                </label>
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/canon3.png" class="card-img-top mt-4 p-4" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon 24-70 f/2,8 <br> Objektiv <br><br>
+                                            68 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
-                                    class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>6K</span>
-                                    <span class="text-primary">4x</span>
-                                </label>
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/canon1.png" class="card-img-top mt-4 p-3" alt="...">
+                                    <div class="card-body">
+                                        <a href="CanonR8.html" class="card-text text-decoration-none text-black">
+                                            Canon eos R8 Mark II <br> Tělo <br><br>
+                                            56 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
-                                    class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>5K</span>
-                                    <span class="text-primary">2x</span>
-                                </label>
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/canon2.png" class="card-img-top mt-4 p-3" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon eos R8 <br> Tělo <br><br>
+                                            34 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/canon3.png" class="card-img-top mt-4 p-4" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon 24-70 f/2,8 <br> Objektiv <br><br>
+                                            68 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
-                    </div>
 
 
-                    <!--filtry6-->
-                    <div class="m-3 mt-5">
-                        <div class=" text-center mt-1 mb-2 fs-5">FPS Videa</div>
+                        <!--SONY-->
+                        <h1 class="text-center mt-5 mb-4">SONY</h1>
 
-                        <!--pod filtry-->
-                        <div>
-                            <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
-                                    class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>240</span>
-                                    <span class="text-primary">5x</span>
-                                </label>
+                        <!--produkty-->
+                        <div class="row justify-content-around text-center row-cols-1 row-cols-md-2 row-cols-lg-3">
+
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/sony1.png" class="card-img-top mt-4 p-3" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Sony Alpha A7 III <br> Tělo <br><br>
+                                            34 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
-                                    class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>120</span>
-                                    <span class="text-primary">6x</span>
-                                </label>
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/sony2.png" class="card-img-top mt-4 p-3" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Cinema Line FX30 <br> Tělo <br><br>
+                                            47 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
-                                    class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>60</span>
-                                    <span class="text-primary">4x</span>
-                                </label>
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/sony3.png" class="card-img-top mt-4 p-4" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Sigma 24-70 f/2,8 <br> Objektiv <br><br>
+                                            34 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
-                                    class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>30</span>
-                                    <span class="text-primary">5x</span>
-                                </label>
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/sony1.png" class="card-img-top mt-4 p-3" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Sony Alpha A7 III <br> Tělo <br><br>
+                                            34 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
-                                    class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>24</span>
-                                    <span class="text-primary">2x</span>
-                                </label>
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/sony2.png" class="card-img-top mt-4 p-3" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Cinema Line FX30 <br> Tělo <br><br>
+                                            47 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
 
-                        </div>
-                    </div>
-
-
-                    <!--filtry7-->
-                    <div class="m-3 mt-5">
-                        <div class=" text-center mt-1 mb-2 fs-5">FPS Snímků</div>
-
-                        <!--pod filtry-->
-                        <div>
-                            <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
-                                    class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>12</span>
-                                    <span class="text-primary">15x</span>
-                                </label>
-                            </div>
-
-                            <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
-                                    class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>10</span>
-                                    <span class="text-primary">12x</span>
-                                </label>
-                            </div>
-
-                            <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
-                                    class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>8</span>
-                                    <span class="text-primary">4x</span>
-                                </label>
-                            </div>
-
-                            <div class="form-check d-flex justify-content-between w-100 my-2">
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"
-                                    class="form-check-input">
-                                <label for="vehicle1" class="form-check-label d-flex justify-content-between w-100">
-                                    <span>6</span>
-                                    <span class="text-primary">4x</span>
-                                </label>
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/sony3.png" class="card-img-top mt-4 p-4" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Sigma 24-70 f/2,8 <br> Objektiv <br><br>
+                                            34 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
+
+
+                        <!--NIKON-->
+                        <h1 class="text-center mt-5 mb-4">NIKON</h1>
+
+                        <!--produkty-->
+                        <div class="row justify-content-around text-center row-cols-1 row-cols-md-2 row-cols-lg-3">
+
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/nikon1.png" class="card-img-top mt-4 p-3" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon eos R8 Mark II <br> Tělo <br><br>
+                                            56 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/nikon2.png" class="card-img-top mt-4 p-3" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon eos R8 <br> Tělo <br><br>
+                                            34 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/nikon3.png" class="card-img-top mt-4 p-4" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon 24-70 f/2,8 <br> Objektiv <br><br>
+                                            68 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/nikon1.png" class="card-img-top mt-4 p-3" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon eos R8 Mark II <br> Tělo <br><br>
+                                            56 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/nikon2.png" class="card-img-top mt-4 p-3" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon eos R8 <br> Tělo <br><br>
+                                            34 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/nikon3.png" class="card-img-top mt-4 p-4" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon 24-70 f/2,8 <br> Objektiv <br><br>
+                                            68 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--FUJI-->
+                        <h1 class="text-center mt-5 mb-4">FUJIFILM</h1>
+
+                        <!--produkty-->
+                        <div class="row justify-content-around text-center row-cols-1 row-cols-md-2 row-cols-lg-3">
+
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/fuji1.png" class="card-img-top mt-4 p-3" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon eos R8 Mark II <br> Tělo <br><br>
+                                            56 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/fuji2.png" class="card-img-top mt-4 p-3" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon eos R8 <br> Tělo <br><br>
+                                            34 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/fuji3.png" class="card-img-top mt-4 p-4" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon 24-70 f/2,8 <br> Objektiv <br><br>
+                                            68 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/fuji1.png" class="card-img-top mt-4 p-3" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon eos R8 Mark II <br> Tělo <br><br>
+                                            56 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/fuji2.png" class="card-img-top mt-4 p-3" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon eos R8 <br> Tělo <br><br>
+                                            34 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/fuji3.png" class="card-img-top mt-4 p-4" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon 24-70 f/2,8 <br> Objektiv <br><br>
+                                            68 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--HASSELBLAD-->
+                        <h1 class="text-center mt-5 mb-4">HASSELBLAD</h1>
+
+                        <!--produkty-->
+                        <div class="row justify-content-around text-center row-cols-1 row-cols-md-2 row-cols-lg-3">
+
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/hass1.png" class="card-img-top mt-4 p-3" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon eos R8 Mark II <br> Tělo <br><br>
+                                            56 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/hass2.png" class="card-img-top mt-4 p-3" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon eos R8 <br> Tělo <br><br>
+                                            34 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/hass3.png" class="card-img-top mt-4 p-4" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon 24-70 f/2,8 <br> Objektiv <br><br>
+                                            68 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/hass1.png" class="card-img-top mt-4 p-3" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon eos R8 Mark II <br> Tělo <br><br>
+                                            56 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/hass2.png" class="card-img-top mt-4 p-3" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon eos R8 <br> Tělo <br><br>
+                                            34 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col d-flex justify-content-center">
+                                <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
+                                    <img src="images/hass3.png" class="card-img-top mt-4 p-4" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="card-text text-decoration-none text-black">
+                                            Canon 24-70 f/2,8 <br> Objektiv <br><br>
+                                            68 990 Kč <br>
+                                            <span class="text-primary">Skladem >3ks</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
                     </div>
-
-
-
-
-
                 </div>
+            </div>
+
+        </div>
 
 
-                <!--tlacitka filtry-->
-                <div class="col-12 col-md-9">
-                    <div class="row row-col-4 d-flex justify-content-around text-center">
-                        <div class="border border-2 border-primary col-2 tlacitko bg-primary-subtle p-2">Doporučené
-                        </div>
-                        <div class="border border-2 border-primary col-2 tlacitko  p-2">Cena sestupně</div>
-                        <div class="border border-2 border-primary col-2 tlacitka  p-2">Cena vzestupně</div>
-                        <div class="border border-2 border-primary col-2 tlacitko  p-2">Abecedně</div>
+
+        <!--Pata-->
+
+        <div class="container bg-white gx-0 pt-5 vanish">
+            <div class="bg-primary-subtle">
+                <div class="row d-flex flex-column flex-md-row justify-content-around">
+                    <div class="col-12 col-md-2 my-5 text-center">
+                        <img src="images/ic1.svg" class="img-fluid" alt="">
+                        <h3 class="text-center">Doručení hned druhý den</h3>
                     </div>
 
-
-                    <!--CANON-->
-                    <h1 class="text-center mt-5 mb-4">Canon</h1>
-
-                    <!--produkty-->
-                    <div class="row justify-content-around text-center row-cols-1 row-cols-md-2 row-cols-lg-3">
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/canon1.png" class="card-img-top mt-4 p-3" alt="...">
-                                <div class="card-body">
-                                    <a href="CanonR8.html" class="card-text text-decoration-none text-black">
-                                        Canon eos R8 Mark II <br> Tělo <br><br>
-                                        56 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/canon2.png" class="card-img-top mt-4 p-3" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon eos R8 <br> Tělo <br><br>
-                                        34 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/canon3.png" class="card-img-top mt-4 p-4" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon 24-70 f/2,8 <br> Objektiv <br><br>
-                                        68 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/canon1.png" class="card-img-top mt-4 p-3" alt="...">
-                                <div class="card-body">
-                                    <a href="CanonR8.html" class="card-text text-decoration-none text-black">
-                                        Canon eos R8 Mark II <br> Tělo <br><br>
-                                        56 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/canon2.png" class="card-img-top mt-4 p-3" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon eos R8 <br> Tělo <br><br>
-                                        34 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/canon3.png" class="card-img-top mt-4 p-4" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon 24-70 f/2,8 <br> Objektiv <br><br>
-                                        68 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    
-
-                    <!--SONY-->
-                    <h1 class="text-center mt-5 mb-4">SONY</h1>
-
-                    <!--produkty-->
-                    <div class="row justify-content-around text-center row-cols-1 row-cols-md-2 row-cols-lg-3">
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/sony1.png" class="card-img-top mt-4 p-3" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Sony Alpha A7 III <br> Tělo <br><br>
-                                        34 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/sony2.png" class="card-img-top mt-4 p-3" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Cinema Line FX30 <br> Tělo <br><br>
-                                        47 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/sony3.png" class="card-img-top mt-4 p-4" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Sigma 24-70 f/2,8 <br> Objektiv <br><br>
-                                        34 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/sony1.png" class="card-img-top mt-4 p-3" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Sony Alpha A7 III <br> Tělo <br><br>
-                                        34 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/sony2.png" class="card-img-top mt-4 p-3" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Cinema Line FX30 <br> Tělo <br><br>
-                                        47 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/sony3.png" class="card-img-top mt-4 p-4" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Sigma 24-70 f/2,8 <br> Objektiv <br><br>
-                                        34 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div class="col-12 col-md-2 my-5 text-center">
+                        <img src="images/ic2.svg" class="img-fluid" alt="">
+                        <h3 class="text-center">Nejlepši ceny na trhu</h3>
                     </div>
 
-
-                    <!--NIKON-->
-                    <h1 class="text-center mt-5 mb-4">NIKON</h1>
-
-                    <!--produkty-->
-                    <div class="row justify-content-around text-center row-cols-1 row-cols-md-2 row-cols-lg-3">
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/nikon1.png" class="card-img-top mt-4 p-3" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon eos R8 Mark II <br> Tělo <br><br>
-                                        56 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/nikon2.png" class="card-img-top mt-4 p-3" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon eos R8 <br> Tělo <br><br>
-                                        34 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/nikon3.png" class="card-img-top mt-4 p-4" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon 24-70 f/2,8 <br> Objektiv <br><br>
-                                        68 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/nikon1.png" class="card-img-top mt-4 p-3" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon eos R8 Mark II <br> Tělo <br><br>
-                                        56 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/nikon2.png" class="card-img-top mt-4 p-3" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon eos R8 <br> Tělo <br><br>
-                                        34 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/nikon3.png" class="card-img-top mt-4 p-4" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon 24-70 f/2,8 <br> Objektiv <br><br>
-                                        68 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div class="col-12 col-md-2 my-5 text-center">
+                        <img src="images/ic3.svg" class="img-fluid" alt="">
+                        <h3 class="text-center">Spokojenost zákazníků</h3>
                     </div>
-
-                    <!--FUJI-->
-                    <h1 class="text-center mt-5 mb-4">FUJIFILM</h1>
-
-                    <!--produkty-->
-                    <div class="row justify-content-around text-center row-cols-1 row-cols-md-2 row-cols-lg-3">
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/fuji1.png" class="card-img-top mt-4 p-3" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon eos R8 Mark II <br> Tělo <br><br>
-                                        56 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/fuji2.png" class="card-img-top mt-4 p-3" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon eos R8 <br> Tělo <br><br>
-                                        34 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/fuji3.png" class="card-img-top mt-4 p-4" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon 24-70 f/2,8 <br> Objektiv <br><br>
-                                        68 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/fuji1.png" class="card-img-top mt-4 p-3" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon eos R8 Mark II <br> Tělo <br><br>
-                                        56 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/fuji2.png" class="card-img-top mt-4 p-3" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon eos R8 <br> Tělo <br><br>
-                                        34 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/fuji3.png" class="card-img-top mt-4 p-4" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon 24-70 f/2,8 <br> Objektiv <br><br>
-                                        68 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!--HASSELBLAD-->
-                    <h1 class="text-center mt-5 mb-4">HASSELBLAD</h1>
-
-                    <!--produkty-->
-                    <div class="row justify-content-around text-center row-cols-1 row-cols-md-2 row-cols-lg-3">
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/hass1.png" class="card-img-top mt-4 p-3" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon eos R8 Mark II <br> Tělo <br><br>
-                                        56 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/hass2.png" class="card-img-top mt-4 p-3" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon eos R8 <br> Tělo <br><br>
-                                        34 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/hass3.png" class="card-img-top mt-4 p-4" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon 24-70 f/2,8 <br> Objektiv <br><br>
-                                        68 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/hass1.png" class="card-img-top mt-4 p-3" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon eos R8 Mark II <br> Tělo <br><br>
-                                        56 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/hass2.png" class="card-img-top mt-4 p-3" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon eos R8 <br> Tělo <br><br>
-                                        34 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col d-flex justify-content-center">
-                            <div class="card border-3 border-primary rounded-0 mb-5" style="width: 40vw;">
-                                <img src="images/hass3.png" class="card-img-top mt-4 p-4" alt="...">
-                                <div class="card-body">
-                                    <a href="" class="card-text text-decoration-none text-black">
-                                        Canon 24-70 f/2,8 <br> Objektiv <br><br>
-                                        68 990 Kč <br>
-                                        <span class="text-primary">Skladem >3ks</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-
-
                 </div>
             </div>
         </div>
 
-    </div>
 
 
+        <div class="container gx-0">
+            <div class="bg-info">
+                <div class="row d-flex flex-column flex-lg-row justify-content-around align-items-center">
+                    <div class="col-12 col-md-4 my-5 text-center">
+                        <h3 class="mt-1">Vše o nákupu</h3>
+                        <h5 class="mt-3">Obchodní podmínky</h5>
+                        <h5 class="mt-1">Zákaznický Ultra program</h5>
+                        <h5 class="mt-1">Nákup na firmu</h5>
+                        <h5 class="mt-1">Reklamace</h5>
+                        <h5 class="mt-1">Nejčastěji kladené otázky</h5>
+                        <h5 class="mt-1">Změnit nastavení cookies</h5>
+                    </div>
 
-    <!--Pata-->
+                    <div class="col-12 col-md-4 my-5 text-center">
+                        <h3 class="mt-1">Ultrapixel</h3>
+                        <h5 class="mt-3">Kontakt a prodejny</h5>
+                        <h5 class="mt-1">Kariéra v Ultraapixelu </h5>
+                        <h5 class="mt-1">Megapixel tým </h5>
+                        <h5 class="mt-1">O nás </h5>
+                        <h5 class="mt-1">Affiliate program</h5>
+                    </div>
 
-    <div class="container bg-white gx-0 pt-5 vanish">
-        <div class="bg-primary-subtle">
-            <div class="row d-flex flex-column flex-md-row justify-content-around">
-                <div class="col-12 col-md-2 my-5 text-center">
-                    <img src="images/ic1.svg" class="img-fluid" alt="">
-                    <h3 class="text-center">Doručení hned druhý den</h3>
-                </div>
-    
-                <div class="col-12 col-md-2 my-5 text-center">
-                    <img src="images/ic2.svg" class="img-fluid"  alt="">
-                    <h3 class="text-center">Nejlepši ceny na trhu</h3>
-                </div>
-    
-                <div class="col-12 col-md-2 my-5 text-center">
-                    <img src="images/ic3.svg" class="img-fluid"  alt="">
-                    <h3 class="text-center">Spokojenost zákazníků</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-
-    <div class="container gx-0">
-        <div class="bg-info">
-            <div class="row d-flex flex-column flex-lg-row justify-content-around align-items-center">
-                <div class="col-12 col-md-4 my-5 text-center">
-                    <h3 class="mt-1">Vše o nákupu</h3>
-                    <h5 class="mt-3">Obchodní podmínky</h5>
-                    <h5 class="mt-1">Zákaznický Ultra program</h5>
-                    <h5 class="mt-1">Nákup na firmu</h5>
-                    <h5 class="mt-1">Reklamace</h5>
-                    <h5 class="mt-1">Nejčastěji kladené otázky</h5>
-                    <h5 class="mt-1">Změnit nastavení cookies</h5>
-                </div>
-    
-                <div class="col-12 col-md-4 my-5 text-center">
-                    <h3 class="mt-1">Ultrapixel</h3>
-                    <h5 class="mt-3">Kontakt a prodejny</h5>
-                    <h5 class="mt-1">Kariéra v Ultraapixelu </h5>
-                    <h5 class="mt-1">Megapixel tým </h5>
-                    <h5 class="mt-1">O nás </h5>
-                    <h5 class="mt-1">Affiliate program</h5>
-                </div>
-    
-                <div class="col-12 col-md-4 my-5 text-center">
-                    <h3 class="mt-1">Sociální sítě</h3>
-                    <h5 class="mt-3">Facebook</h5>
-                    <h5 class="mt-1">Instagram</h5>
-                    <h5 class="mt-1">Youtube</h5>
-                    <h5 class="mt-1">Galerie Megapixel</h5>
-                    <h5 class="mt-1">Mega Podcast</h5>
+                    <div class="col-12 col-md-4 my-5 text-center">
+                        <h3 class="mt-1">Sociální sítě</h3>
+                        <h5 class="mt-3">Facebook</h5>
+                        <h5 class="mt-1">Instagram</h5>
+                        <h5 class="mt-1">Youtube</h5>
+                        <h5 class="mt-1">Galerie Megapixel</h5>
+                        <h5 class="mt-1">Mega Podcast</h5>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    
 
 
-    <div class="container gx-0">
-        <div class="bg-white">
 
 
-            <div class="d-flex justify-content-center">
-                <div class="my-5">
-                    <h3 class="mt-1">© 2001–2024 ULTRAPIXEL s.r.o.</h3>
-                    <h3 class="mt-1">Specializované prodejny s digitální <br> technikou,</h3>
-                    <h3 class="mt-1">Tel.: 123 456 789 | e-mail: info@ultrapixel.cz</h3>
+        <div class="container gx-0">
+            <div class="bg-white">
 
+
+                <div class="d-flex justify-content-center">
+                    <div class="my-5">
+                        <h3 class="mt-1">© 2001–2024 ULTRAPIXEL s.r.o.</h3>
+                        <h3 class="mt-1">Specializované prodejny s digitální <br> technikou,</h3>
+                        <h3 class="mt-1">Tel.: 123 456 789 | e-mail: info@ultrapixel.cz</h3>
+
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
 
 
 

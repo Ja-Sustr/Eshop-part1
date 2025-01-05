@@ -17,7 +17,26 @@ $primary: #3BA5F0;
 $secondary: #496BF2;
 $primary-subtle: #9ED7FF;
 $info: #E9F6FF;
+$success: #3BA5F0;
 
+
+.btn-success {
+    background: linear-gradient(to right, #3BA5F0, #496BF2);
+    border: none; // Optional: remove border if you want it to be a pure gradient button
+    color: white; // Optional: set text color to white to contrast with the gradient
+  
+    // Optional: Add hover effect for gradient button
+    &:hover {
+      background: linear-gradient(to right, #3BA5F0, #496BF2);
+      opacity: 0.9; // Optional: add opacity change on hover for effect
+    }
+  
+    // Optional: Add focus effect
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(59, 165, 240, 0.5); // Adjust shadow for focus
+    }
+  }
+  
 
 
 .text-success {
@@ -40,3 +59,28 @@ $container-max-widths: (
 
 
 @import "bootstrap";
+
+
+@media (max-width: 767px) {
+    .btn-success {
+      background: linear-gradient(to right, #3BA5F0, #496BF2);
+      border: none;
+      color: white;
+  
+      // Optional hover/focus effects
+      &:hover {
+        background: linear-gradient(to right, #3BA5F0, #496BF2);
+        opacity: 0.9;
+      }
+  
+      &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(59, 165, 240, 0.5);
+      }
+    }
+  
+    // Hide .target-div on smaller screens
+    .skryt {
+      display: none;
+    }
+  }
+  
