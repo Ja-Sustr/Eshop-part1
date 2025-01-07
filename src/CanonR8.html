@@ -10,15 +10,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Gabriela&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 </head>
 
 <body class="bg-light">
 
 
     <nav class="navbar bg-white border-bottom border-success border-5 container">
-        <div class="container">
-            <a class="navbar-brand mx-auto" href="index.html">
-                <img src="images/Logo.svg" alt="Bootstrap" width="100" height="100">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand mx-auto position-relative" href="index.html" style="z-index: 1;">
+                <img src="images/Logo.svg" alt="Ultrapixely" width="100" height="100">
+            </a>
+
+            <a class="navbar-brand position-absolute end-0 me-5" href="#">
+                <img src="images/cart4.svg" alt="Cart" width="40" height="40">
             </a>
         </div>
     </nav>
@@ -27,202 +35,287 @@
     <div class="container bg-white">
         <h5 class="text-center pt-5">Bezzrcadlovka</h5>
         <h1 class="text-center pt-1">Canon EOS R6 Mark II tělo</h1>
+    </div>
+
+
+    <div class="container bg-white pb-5">
+        <div class="row">
+            <!-- První sloupec -->
+            <div class="col-12 col-md-7">
+                <div class="d-flex justify-content-center">
+                    <!-- Viditelný obrázek v galerii -->
+                    <a data-fancybox="gallery" href="images/R1.webp" class="d-flex justify-content-center">
+                        <img src="images/R1.webp" class="p-1 w-50 mx-auto" alt="Canon R8">
+                    </a>
+                </div>
+            </div>
+        
+        <!-- Skryté obrázky pro FancyBox galerii -->
+        <a data-fancybox="gallery" href="images/R2.webp" style="display: none;"></a>
+        <a data-fancybox="gallery" href="images/R3.webp" style="display: none;"></a>
+        <a data-fancybox="gallery" href="images/R4.webp" style="display: none;"></a>
+        <a data-fancybox="gallery" href="images/R5.webp" style="display: none;"></a>
+        <a data-fancybox="gallery" href="images/R6.webp" style="display: none;"></a>
+        <a data-fancybox="gallery" href="images/R7.webp" style="display: none;"></a>
+        <a data-fancybox="gallery" href="images/R8.webp" style="display: none;"></a>
+
+
+            
+
+            <!-- Druhý sloupec -->
+            <div class="col-md-3">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="row" style="width: 50vw;">
+                        <a href=""
+                            class="border border-primary border-3 text-center p-2 text-decoration-none text-black">
+                            <h5>Pouze
+                                tělo <br> 56 990 KČ</h5>
+                        </a>
+                        <a href=""
+                            class="border border-primary border-3 text-center p-2 text-decoration-none text-black mt-3">
+                            <h5>Set
+                                24-105 mm f/4-7,1 <br> 65 990KČ</h5>
+                        </a>
+                        <a href=""
+                            class="border border-primary border-3 text-center p-2 text-decoration-none text-black mt-3">
+                            <h5>Set
+                                24-105 mm f/4 <br> 85 990KČ</h5>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container bg-white">
+        <h2 class="text-center text-success">Specifikace</h2>
+
+        <div class=" w-75  mx-auto py-4">
+            <h4>Obecné</h4>
+            <hr class="hr border border-black opacity-100 border-2" />
+            <h6 class="mx-1 spec">Úroveň produktu <span class="float-end spec">Poloprofesionál a pokročilý</span></h6>
+
+            <hr class="hr border border-black opacity-100 border-1" />
+            <h6 class="mx-1 spec">Podle použití <span class="float-end spec">Poloprofesionál a pokročilý</span></h6>
+
+            <hr class="hr border border-black opacity-100 border-1" />
         </div>
 
 
-        <div class="container bg-white pb-5">
-            <div class="row">
-                <!-- První sloupec -->
-                <div class="col-12 col-md-7">
-                    <div class="d-flex justify-content-center">
-                        <img src="images/CanonR8.png" class="p-1 w-50 mx-auto" alt="">
-                    </div>
-                </div>
+        <div class=" w-75  mx-auto py-4">
 
-                <!-- Druhý sloupec -->
-                <div class="col-md-3">
-                    <div class="d-flex justify-content-center align-items-center h-100">
-                        <div class="row" style="width: 50vw;">
-                            <a href="" class="border border-primary border-3 text-center p-2 text-decoration-none text-black">Pouze tělo <br> 56 990 KČ</a>
-                            <a href="" class="border border-primary border-3 text-center p-2 text-decoration-none text-black mt-3">Set  24-105 mm f/4-7,1 <br> 65 990KČ</a>
-                            <a href="" class="border border-primary border-3 text-center p-2 text-decoration-none text-black mt-3">Set  24-105 mm f/4 <br> 85 990KČ</a>
+            <h4>Bezdrátové sítě</h4>
+            <hr class="hr border border-black opacity-100 border-2" />
+            <h6 class="mx-1 spec">GPS <span class="float-end spec">Ne</span></h6>
 
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            </div>
+            <hr class="hr border border-black opacity-100 border-1" />
+            <h6 class="mx-1 spec">WI-FI <span class="float-end spec">Ano</span></h6>
 
-        
-    <div class="container bg-white">
-        <h2 class="text-center text-success">Specifikace</h3>
+            <hr class="hr border border-black opacity-100 border-1" />
+            <h6 class="mx-1 spec">Bluetooth <span class="float-end spec">Ano</span></h6>
 
-            <div class=" w-75  mx-auto py-4">
-                <h4>Obecné</h4>
-                <hr class="hr border border-black opacity-100 border-2" />
-                <h6 class="mx-1">Úroveň produktu <span class="float-end">Poloprofesionál a pokročilý</span></h6>
+            <hr class="hr border border-black opacity-100 border-1" />
+        </div>
 
-                <hr class="hr border border-black opacity-100 border-1" />
-                <h6 class="mx-1">Podle použití <span class="float-end">Poloprofesionál a pokročilý</span></h6>
+        <div class=" w-75  mx-auto py-4">
 
-                <hr class="hr border border-black opacity-100 border-1" />
-            </div>
+            <h4>Expozice a fotografování</h4>
+            <hr class="hr border border-black opacity-100 border-2" />
+            <h6 class="mx-1 spec">Blokování AE <span class="float-end spec">Ano</span></h6>
 
+            <hr class="hr border border-black opacity-100 border-1" />
+            <h6 class="mx-1 spec">Bracketing <span class="float-end spec">Ano</span></h6>
 
-            <div class=" w-75  mx-auto py-4">
+            <hr class="hr border border-black opacity-100 border-1" />
+            <h6 class="mx-1 spec">Poměr stran snímku <span class="float-end spec">16:9, 1:1, 3:2, 4:3</span></h6>
 
-                <h4>Bezdrátové sítě</h4>
-                <hr class="hr border border-black opacity-100 border-2" />
-                <h6 class="mx-1">GPS <span class="float-end">Ne</span></h6>
+            <hr class="hr border border-black opacity-100 border-1" />
+            <h6 class="mx-1 spec">Způsob měření expozice <span class="float-end spec">Zónové, Středové, Bodové,
+                    Matrix</span>
+            </h6>
 
-                <hr class="hr border border-black opacity-100 border-1" />
-                <h6 class="mx-1">WI-FI <span class="float-end">Ano</span></h6>
+            <hr class="hr border border-black opacity-100 border-1" />
+            <h6 class="mx-1 spec">Rozsah korekce expozice <span class="float-end spec">± 3 EV po 1/3 EV, ± 3 EV po 1/2
+                    EV</span></h6>
 
-                <hr class="hr border border-black opacity-100 border-1" />
-                <h6 class="mx-1">Bluetooth <span class="float-end">Ano</span></h6>
+            <hr class="hr border border-black opacity-100 border-1" />
+            <h6 class="mx-1 spec">ISO - minimální citlivost <span class="float-end spec">100</span></h6>
 
-                <hr class="hr border border-black opacity-100 border-1" />
-            </div>
+            <hr class="hr border border-black opacity-100 border-1" />
+            <h6 class="mx-1 spec">ISO - maximální citlivost <span class="float-end spec">102 400</span></h6>
 
-            <div class=" w-75  mx-auto py-4">
-                
-                <h4>Expozice a fotografování</h4>
-                <hr class="hr border border-black opacity-100 border-2" />
-                <h6 class="mx-1">Blokování AE <span class="float-end">Ano</span></h6>
+            <hr class="hr border border-black opacity-100 border-1" />
+            <h6 class="mx-1 spec">Rychlost sériového snímání <span class="float-end spec">12 sn./s</span></h6>
 
-                <hr class="hr border border-black opacity-100 border-1" />
-                <h6 class="mx-1">Bracketing <span class="float-end">Ano</span></h6>
+            <hr class="hr border border-black opacity-100 border-1" />
+            <h6 class="mx-1 spec">Panorama <span class="float-end spec">Ne</span></h6>
 
-                <hr class="hr border border-black opacity-100 border-1" />
-                <h6 class="mx-1">Poměr stran snímku <span class="float-end">16:9, 1:1, 3:2, 4:3</span></h6>
+            <hr class="hr border border-black opacity-100 border-1" />
+            <h6 class="mx-1 spec">HDR <span class="float-end spec">Ano</span></h6>
 
-                <hr class="hr border border-black opacity-100 border-1" />
-                <h6 class="mx-1">Způsob měření expozice <span class="float-end">Zónové, Středové, Bodové, Matrix</span></h6>
+            <hr class="hr border border-black opacity-100 border-1" />
+            <h6 class="mx-1 spec">Datové razítko <span class="float-end spec">Ne</span></h6>
 
-                <hr class="hr border border-black opacity-100 border-1" />
-                <h6 class="mx-1">Rozsah korekce expozice <span class="float-end">± 3 EV po 1/3 EV, ± 3 EV po 1/2 EV</span></h6>
-
-                <hr class="hr border border-black opacity-100 border-1" />
-                <h6 class="mx-1">ISO - minimální citlivost <span class="float-end">100</span></h6>
-
-                <hr class="hr border border-black opacity-100 border-1" />
-                <h6 class="mx-1">ISO - maximální citlivost <span class="float-end">102 400</span></h6>
-
-                <hr class="hr border border-black opacity-100 border-1" />
-                <h6 class="mx-1">Rychlost sériového snímání <span class="float-end">12 sn./s</span></h6>
-
-                <hr class="hr border border-black opacity-100 border-1" />
-                <h6 class="mx-1">Panorama <span class="float-end">Ne</span></h6>
-
-                <hr class="hr border border-black opacity-100 border-1" />
-                <h6 class="mx-1">HDR <span class="float-end">Ano</span></h6>
-
-                <hr class="hr border border-black opacity-100 border-1" />
-                <h6 class="mx-1">Datové razítko <span class="float-end">Ne</span></h6>
-
-                <hr class="hr border border-black opacity-100 border-1" />
-                <h6 class="mx-1">Vyvážení bílé barvy <span class="float-end">utomatické / přednastavené hodnoty / ruční kalibrace / v Kelvinech
+            <hr class="hr border border-black opacity-100 border-1" />
+            <h6 class="mx-1 spec">Vyvážení bílé barvy <span class="float-end spec">automatické / přednastavené / ruční /
+                    v Kelvinech
                 </span></h6>
 
-                
-
-                <hr class="hr border border-black opacity-100 border-1" />
-            </div>
-
-            <div class=" w-75  mx-auto py-4">
-                <h4>Ke stažení</h4>
-                <hr class="hr border border-black opacity-100 border-2" />
-                <h6 class="mx-1">Návod <span class="float-end"><a class="text-black" href="https://www.megapixel.cz/data/images/_orig/3/377193.pdf">R6II - Návod.pdf</a></span></h6>
-
-                <hr class="hr border border-black opacity-100 border-1" />
-                
-            </div>
-            
-    </div>
 
 
-        
-   <!--Pata-->
-
-   <div class="container bg-white gx-0 pt-5 vanish">
-    <div class="bg-primary-subtle">
-        <div class="row d-flex flex-column flex-md-row justify-content-around">
-            <div class="col-12 col-md-2 my-5 text-center">
-                <img src="images/ic1.svg" class="img-fluid" alt="">
-                <h3 class="text-center">Doručení hned druhý den</h3>
-            </div>
-
-            <div class="col-12 col-md-2 my-5 text-center">
-                <img src="images/ic2.svg" class="img-fluid" alt="">
-                <h3 class="text-center">Nejlepši ceny na trhu</h3>
-            </div>
-
-            <div class="col-12 col-md-2 my-5 text-center">
-                <img src="images/ic3.svg" class="img-fluid" alt="">
-                <h3 class="text-center">Spokojenost zákazníků</h3>
-            </div>
+            <hr class="hr border border-black opacity-100 border-1" />
         </div>
-    </div>
-</div>
 
+        <div class=" w-75  mx-auto py-4">
+            <h4>Ke stažení</h4>
+            <hr class="hr border border-black opacity-100 border-2" />
+            <h6 class="mx-1 spec">Návod <span class="float-end spec"><a class="text-black"
+                        href="https://www.megapixel.cz/data/images/_orig/3/377193.pdf">R6II - Návod.pdf</a></span>
+            </h6>
 
+            <hr class="hr border border-black opacity-100 border-1" />
 
-<div class="container gx-0">
-    <div class="bg-info">
-        <div class="row d-flex flex-column flex-lg-row justify-content-around align-items-center">
-            <div class="col-12 col-md-4 my-5 text-center">
-                <h3 class="mt-1">Vše o nákupu</h3>
-                <h5 class="mt-3">Obchodní podmínky</h5>
-                <h5 class="mt-1">Zákaznický Ultra program</h5>
-                <h5 class="mt-1">Nákup na firmu</h5>
-                <h5 class="mt-1">Reklamace</h5>
-                <h5 class="mt-1">Nejčastěji kladené otázky</h5>
-                <h5 class="mt-1">Změnit nastavení cookies</h5>
-            </div>
-
-            <div class="col-12 col-md-4 my-5 text-center">
-                <h3 class="mt-1">Ultrapixel</h3>
-                <h5 class="mt-3">Kontakt a prodejny</h5>
-                <h5 class="mt-1">Kariéra v Ultraapixelu </h5>
-                <h5 class="mt-1">Megapixel tým </h5>
-                <h5 class="mt-1">O nás </h5>
-                <h5 class="mt-1">Affiliate program</h5>
-            </div>
-
-            <div class="col-12 col-md-4 my-5 text-center">
-                <h3 class="mt-1">Sociální sítě</h3>
-                <h5 class="mt-3">Facebook</h5>
-                <h5 class="mt-1">Instagram</h5>
-                <h5 class="mt-1">Youtube</h5>
-                <h5 class="mt-1">Galerie Megapixel</h5>
-                <h5 class="mt-1">Mega Podcast</h5>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-<div class="container gx-0">
-    <div class="bg-white">
-
-
-        <div class="d-flex justify-content-center">
-            <div class="my-5">
-                <h3 class="mt-1">© 2001–2024 ULTRAPIXEL s.r.o.</h3>
-                <h3 class="mt-1">Specializované prodejny s digitální <br> technikou,</h3>
-                <h3 class="mt-1">Tel.: 123 456 789 | e-mail: info@ultrapixel.cz</h3>
-
-            </div>
         </div>
 
     </div>
-</div>
 
 
 
+    <div class="container bg-white">
+        <h2 class="text-center text-success">Popis a parametry</h2>
+        <h5 class="w-75 mx-auto text-center">
+            Canon EOS R6 Mark II, spojující špičkový fotografický výkon s pokročilými možnostmi videa, je
+            všestranná bezzrcadlovka pro všechny kreativní tvůrce. Jádrem fotoaparátu je 24,2 Mpx snímač CMOS, který
+            v kombinaci s procesorem DIGIC X nabízí vylepšený výkon AF, působivé 6K RAW a 4K 60p 10bitové video a
+            mimo jiné si poradí se sériovým snímáním rychlostí až 40 sn./s. Aktualizace se dočkalo i samotné tělo
+            fotoaparátu, které nyní nabízí intuitivnější ovládání, včetně přepracované horní desky pro snadnější
+            přístup k různým režimům fotografování.</h5>
+
+        <h3 class="text-center text-success mt-5">Výkonný procesor DIGIC X a vylepšený CMOS snímač</h3>
+        <h5 class="w-75 mx-auto text-center">
+            R6 Mark II je po vzoru R5, R6 a 1D X Mark III osazen procesorem DIGIC X, který je schopen zpracovávat
+            vysokorychlostní série snímků i 4K video s vysokým rozlišením. Podporuje sériové snímání rychlostí až 40
+            sn./s s využitím elektronické závěrky nebo 12 sn./s s mechanickou závěrkou, s načítáním AF a AE před každým
+            snímkem. Vylepšený procesor také zajišťuje lepší výkon při slabém osvětlení, přičemž rozsah citlivosti je
+            rozšířen od ISO 100-102400 a lze jej dále rozšířit na ISO 204800 pro práci ve velmi obtížných světelných
+            podmínkách. Výkon procesoru doplňuje snímač typu CMOS s rozlišením 24,1 milionu bodů, společně s novou
+            generací technologie automatického ostření se zdvojenými body Dual Pixel CMOS AF II pro rychlejší a
+            spolehlivější výkon AF.</h5>
+
+        <h3 class="text-center text-success mt-5">Vysokorychlostní sekvenční fotografování</h3>
+        <h5 class="w-75 mx-auto text-center">
+            R6 Mark II je po vzoru R5, R6 a 1D X Mark III osazen procesorem DIGIC X, který je schopen zpracovávat
+            vysokorychlostní série snímků i 4K video s vysokým rozlišením. Podporuje sériové snímání rychlostí až 40
+            sn./s s využitím elektronické závěrky nebo 12 sn./s s mechanickou závěrkou, s načítáním AF a AE před každým
+            snímkem. Vylepšený procesor také zajišťuje lepší výkon při slabém osvětlení, přičemž rozsah citlivosti je
+            rozšířen od ISO 100-102400 a lze jej dále rozšířit na ISO 204800 pro práci ve velmi obtížných světelných
+            podmínkách. Výkon procesoru doplňuje snímač typu CMOS s rozlišením 24,1 milionu bodů, společně s novou
+            generací technologie automatického ostření se zdvojenými body Dual Pixel CMOS AF II pro rychlejší a
+            spolehlivější výkon AF.</h5>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!--Pata-->
+
+    <div class="container bg-white gx-0 pt-5 vanish">
+        <div class="bg-primary-subtle">
+            <div class="row d-flex flex-column flex-md-row justify-content-around">
+                <div class="col-12 col-md-2 my-5 text-center">
+                    <img src="images/ic1.svg" class="img-fluid" alt="">
+                    <h3 class="text-center">Doručení hned druhý den</h3>
+                </div>
+
+                <div class="col-12 col-md-2 my-5 text-center">
+                    <img src="images/ic2.svg" class="img-fluid" alt="">
+                    <h3 class="text-center">Nejlepši ceny na trhu</h3>
+                </div>
+
+                <div class="col-12 col-md-2 my-5 text-center">
+                    <img src="images/ic3.svg" class="img-fluid" alt="">
+                    <h3 class="text-center">Spokojenost zákazníků</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container gx-0">
+        <div class="bg-info">
+            <div class="row d-flex flex-column flex-lg-row justify-content-around align-items-center">
+                <div class="col-12 col-md-4 my-5 text-center">
+                    <h3 class="mt-1">Vše o nákupu</h3>
+                    <h5 class="mt-3">Obchodní podmínky</h5>
+                    <h5 class="mt-1">Zákaznický Ultra program</h5>
+                    <h5 class="mt-1">Nákup na firmu</h5>
+                    <h5 class="mt-1">Reklamace</h5>
+                    <h5 class="mt-1">Nejčastěji kladené otázky</h5>
+                    <h5 class="mt-1">Změnit nastavení cookies</h5>
+                </div>
+
+                <div class="col-12 col-md-4 my-5 text-center">
+                    <h3 class="mt-1">Ultrapixel</h3>
+                    <h5 class="mt-3">Kontakt a prodejny</h5>
+                    <h5 class="mt-1">Kariéra v Ultraapixelu </h5>
+                    <h5 class="mt-1">Megapixel tým </h5>
+                    <h5 class="mt-1">O nás </h5>
+                    <h5 class="mt-1">Affiliate program</h5>
+                </div>
+
+                <div class="col-12 col-md-4 my-5 text-center">
+                    <h3 class="mt-1">Sociální sítě</h3>
+                    <h5 class="mt-3">Facebook</h5>
+                    <h5 class="mt-1">Instagram</h5>
+                    <h5 class="mt-1">Youtube</h5>
+                    <h5 class="mt-1">Galerie Megapixel</h5>
+                    <h5 class="mt-1">Mega Podcast</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container gx-0">
+        <div class="bg-white">
+
+
+            <div class="d-flex justify-content-center">
+                <div class="my-5">
+                    <h3 class="mt-1">© 2001–2024 ULTRAPIXEL s.r.o.</h3>
+                    <h3 class="mt-1">Specializované prodejny s digitální <br> technikou,</h3>
+                    <h3 class="mt-1">Tel.: 123 456 789 | e-mail: info@ultrapixel.cz</h3>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        Toolbar: true,
+        Thumbs: {
+            autoStart: true
+        }
+    });
+</script>
 
 </body>
 
