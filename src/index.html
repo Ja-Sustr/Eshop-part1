@@ -15,28 +15,28 @@
 <body class="bg-light">
 
 
+
     <nav class="navbar bg-white border-bottom border-success border-5 container">
-        <div class="container">
-            <a class="navbar-brand mx-auto" href="#">
-                <img src="images/Logo.svg" alt="Bootstrap" width="100" height="100">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand mx-auto position-relative" href="#" style="z-index: 1;">
+                <img src="images/Logo.svg" alt="Ultrapixely" width="100" height="100">
+            </a>
+
+            <a class="navbar-brand position-absolute end-0 me-5" href="#">
+                <img src="images/cart4.svg" alt="Cart" width="40" height="40">
             </a>
         </div>
     </nav>
+    
 
 
     <div class="container bg-white">
-
-        <div>
-
-
-        </div>
-
-
         <h4 class="text-center pt-3 text-success">NEJLEPŠÍ FOTO TECHNIKA NA TRHU</h4>
 
         <div class="dropdown d-md-none">
 
-            <button class="btn btn-success dropdown-toggle w-100" type="button" id="filtersDropdown"
+            <button class="btn btn-success dropdown-toggle w-100 py-3" type="button" id="filtersDropdown"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Filtry
             </button>
@@ -94,19 +94,7 @@
                                     <span class="text-primary fs-4">6x</span>
                                 </label>
                             </div>
-                            <div class="range mt-4">
-                                <div class="range-slider">
-                                    <span class="range-selected"></span>
-                                </div>
-                                <div class="range-input">
-                                    <input type="range" class="min" min="0" max="200000" value="60000" step="100">
-                                    <input type="range" class="max" min="0" max="200000" value="140000" step="100">
-                                </div>
-                                <div class="range-price mt-3">
-                                    <input type="number" name="min" value="60000" class="border-primary">
-                                    <input type="number" name="max" value="140000" class="border-primary">
-                                </div>
-                            </div>
+                        
                         </div>
                     </div>
                 </li>

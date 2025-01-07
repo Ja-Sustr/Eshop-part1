@@ -41,6 +41,8 @@ rangePrice.forEach((input) => {
 });
 import '../scss/styles.scss'
 
+
+
 // Import all of Bootstrap's JS
 import {Dropdown} from 'bootstrap';
 
