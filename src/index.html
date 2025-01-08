@@ -15,21 +15,33 @@
 <body class="bg-light">
 
 
-
-    <nav class="navbar bg-white border-bottom border-success border-5 container">
+    <nav class="navbar bg-white border-bottom border-success border-5 container" id="mainNavbar">
         <div class="container d-flex justify-content-between align-items-center">
-
-            <a class="navbar-brand mx-auto position-relative" href="#" style="z-index: 1;">
+            <!-- Logo -->
+            <a class="navbar-brand mx-auto position-relative" href="index.html" style="z-index: 1;">
                 <img src="images/Logo.svg" alt="Ultrapixely" width="100" height="100">
             </a>
-
-            <a class="navbar-brand position-absolute end-0 me-5" href="#">
-                <img src="images/cart4.svg" alt="Cart" width="40" height="40">
-            </a>
+    
+            <!-- Dropdown košík -->
+            <div class="dropdown position-absolute end-0 me-5">
+                <a class="navbar-brand dropdown-toggle" href="#" id="cartDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="images/cart4.svg" alt="Cart" width="40" height="40">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end custom-dropdown" aria-labelledby="cartDropdown">
+                    <!-- Obsah dropdownu -->
+                    <li><h6 class="dropdown-header">Váš košík</h6></li>
+                    <li><a class="dropdown-item" href="#">Canon R8 II <br> <img src="images/canon1.png" alt="..." width="20%" class="ms-4"></a></li>
+                    <li><a class="dropdown-item" href="#">Canon 24-70 f/2,8
+                        Objektiv <br> <img src="images/canon3.png" alt="..." width="20%" class="ms-4"></a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Dokončit objednávku</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-
+    
+     
 
     <div class="container bg-white">
         <h4 class="text-center pt-3 text-secondary">NEJLEPŠÍ FOTO TECHNIKA NA TRHU</h4>

@@ -108,32 +108,9 @@
 
 
 
-<div class="col-12 col-md-7">
-                <div class="d-flex justify-content-center">
-                    <a data-fancybox="gallery" href="CanonR8.html" class="col-12 col-lg-6 col-xl-4">
-                        <img src="images/R1.webp" class="img-fluid rounded m-1" alt="Galerie obrázek">
-                    </a>
-                    <a data-fancybox="gallery" href="images/R2.webp" style="display: none;"></a>
-                    <a data-fancybox="gallery" href="images/R3.webp" style="display: none;"></a>
-                    <a data-fancybox="gallery" href="images/R4.webp" style="display: none;"></a>
-                    <a data-fancybox="gallery" href="images/R5.webp" style="display: none;"></a>
-                    <a data-fancybox="gallery" href="images/R6.webp" style="display: none;"></a>
-                    <a data-fancybox="gallery" href="images/R7.webp" style="display: none;"></a>
-                    <a data-fancybox="gallery" href="images/R8.webp" style="display: none;"></a>
-                </div>
-            </div>
-
-
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-<script>
-    Fancybox.bind('[data-fancybox="gallery"]', {
-        Toolbar: true,
-        Thumbs: {
-            autoStart: true
-        }
-    });
-</script>
+.navbar {
+  position: relative; /* Zajišťuje, že dropdown neovlivní ostatní části layoutu */
+  min-height: 100px; /* Minimální výška navbaru */
+  overflow: visible; /* Povolení viditelnosti elementů mimo navbar */
+}
 
