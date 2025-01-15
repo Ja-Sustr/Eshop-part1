@@ -67,7 +67,6 @@ $container-max-widths: (
       border: none;
       color: white;
   
-      // Optional hover/focus effects
       &:hover {
         background: linear-gradient(to right, #3BA5F0, #496BF2);
         opacity: 0.9;
@@ -78,7 +77,6 @@ $container-max-widths: (
       }
     }
   
-    // Hide .target-div on smaller screens
     .skryt {
       display: none;
     }
