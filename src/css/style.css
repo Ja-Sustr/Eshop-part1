@@ -29,10 +29,24 @@ span{
   font-family: "Chonburi";
 }
 
+.font16{
+  font-size: 16px;
+}
 
 .spec{
   font-size: 1.1vw;
 }
+
+.stick{
+  position: sticky;
+  top: 0;
+}
+
+.w85{
+  width: 85%;
+}
+
+
 
 .range-slider {
     height: 5px;
