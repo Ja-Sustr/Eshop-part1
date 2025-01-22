@@ -37,6 +37,11 @@ span{
   font-size: 1.1vw;
 }
 
+.abs{
+transform: translateX(-300%);
+}
+
+
 .stick{
   position: sticky;
   top: 0;
